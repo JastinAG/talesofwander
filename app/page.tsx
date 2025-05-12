@@ -13,10 +13,48 @@ import { useState, useRef, useEffect } from "react"
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("")
   const [filter, setFilter] = useState("")
+  const [suggestions, setSuggestions] = useState<string[]>([])
+  const [showSuggestions, setShowSuggestions] = useState(false)
+  const suggestionsRef = useRef<HTMLDivElement>(null)
   const featuredTestimonials = testimonials // show all
   const featuredRef = useRef<HTMLDivElement>(null)
   const testimonialsRowRef = useRef<HTMLDivElement>(null)
   const [carouselIndex, setCarouselIndex] = useState(0)
+
+  // Get unique locations from destinations
+  const allLocations = Array.from(new Set(destinations.map(d => d.location)))
+
+  // Update suggestions when search term changes
+  useEffect(() => {
+    if (searchTerm.length > 0) {
+      const filteredSuggestions = allLocations.filter(location =>
+        location.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+      setSuggestions(filteredSuggestions)
+      setShowSuggestions(true)
+    } else {
+      setSuggestions([])
+      setShowSuggestions(false)
+    }
+  }, [searchTerm])
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (suggestionsRef.current && !suggestionsRef.current.contains(event.target as Node)) {
+        setShowSuggestions(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  // Handle suggestion click
+  const handleSuggestionClick = (suggestion: string) => {
+    setSearchTerm(suggestion)
+    setShowSuggestions(false)
+  }
 
   // Filter destinations based on search and filter
   const filteredDestinations = destinations.filter((destination) => {
@@ -81,13 +119,29 @@ export default function Home() {
                 </p>
                 <div className="max-w-3xl mx-auto mb-8 bg-white/10 backdrop-blur-md p-4 rounded-lg animate-fade-in-delay-2">
                   <div className="flex flex-col md:flex-row gap-4">
-                    <input
-                      type="text"
-                      placeholder="Search destinations..."
-                      className="flex-grow px-4 py-3 rounded-md bg-white/90 text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500"
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                    />
+                    <div className="flex-grow relative" ref={suggestionsRef}>
+                      <input
+                        type="text"
+                        placeholder="Search destinations..."
+                        className="w-full px-4 py-3 rounded-md bg-white/90 text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        onFocus={() => searchTerm.length > 0 && setShowSuggestions(true)}
+                      />
+                      {showSuggestions && suggestions.length > 0 && (
+                        <div className="absolute z-50 w-full mt-1 bg-white rounded-md shadow-lg max-h-60 overflow-auto">
+                          {suggestions.map((suggestion, index) => (
+                            <div
+                              key={index}
+                              className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-navy-900"
+                              onClick={() => handleSuggestionClick(suggestion)}
+                            >
+                              {suggestion}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                     <select
                       className="px-4 py-3 rounded-md bg-white/90 text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500"
                       value={filter}
