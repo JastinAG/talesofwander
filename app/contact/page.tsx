@@ -36,10 +36,10 @@ export default function ContactPage() {
                     <h4 className="font-bold text-navy-500 dark:text-white mb-1">Email</h4>
                     <p className="text-gray-700 dark:text-gray-300">
                       <a
-                        href="mailto:wanderthrust@landstar-group.com"
+                        href="mailto:wanderthurst@landstar-group.com"
                         className="hover:text-gold-500 transition-colors"
                       >
-                        wanderthrust@landstar-group.com
+                        wanderthurst@landstar-group.com
                       </a>
                     </p>
                   </div>
@@ -182,8 +182,8 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Tales of Wanderthrust Office Location"
-              aria-label="Map showing the location of Tales of Wanderthrust office in Mombasa, Kenya"
+              title="Tales of Wanderthurst Office Location"
+              aria-label="Map showing the location of Tales of Wanderthurst office in Mombasa, Kenya"
             ></iframe>
           </div>
         </div>

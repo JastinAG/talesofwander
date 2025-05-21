@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Tales of Wanderthrust</h3>
+            <h3 className="text-xl font-bold mb-4">Tales of Wanderthurst</h3>
             <p className="mb-4">Creating unforgettable travel experiences across Kenya, Africa, and worldwide.</p>
             <div className="flex space-x-4">
               <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-gold-500 transition-colors">
@@ -77,8 +77,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-gold-500" />
-                <a href="mailto:wanderthrust@landstar-group.com" className="hover:text-gold-500 transition-colors">
-                  wanderthrust@landstar-group.com
+                <a href="mailto:wanderthurst@landstar-group.com" className="hover:text-gold-500 transition-colors">
+                  wanderthurst@landstar-group.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-navy-400 mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Tales of Wanderthrust. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Tales of Wanderthurst. All rights reserved.</p>
           <div className="mt-2 space-x-4">
             <Link href="/privacy-policy" className="text-sm hover:text-gold-500 transition-colors">
               Privacy Policy

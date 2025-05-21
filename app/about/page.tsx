@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <>
       <HeroSection
-        title="About Tales of Wanderthrust"
+        title="About Tales of Wanderthurst"
         subtitle="Creating unforgettable travel experiences across Kenya, Africa, and worldwide"
         minHeight="min-h-[50vh]"
       />
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-navy-500 dark:text-white">Our Story</h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Tales of Wanderthrust was born out of a passion for showcasing the incredible beauty and diversity of
+                Tales of Wanderthurst was born out of a passion for showcasing the incredible beauty and diversity of
                 Kenya to travelers from around the world. Founded in 2015, our journey began with a simple mission: to
                 create authentic, immersive travel experiences that connect visitors with the heart and soul of Kenya.
               </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="/images/about-story.jpg"
-                alt="Tales of Wanderthrust team"
+                alt="Tales of Wanderthurst team"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 Our Commitment to Responsible Tourism
               </h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                At Tales of Wanderthrust, we believe that travel should be a force for good. We are committed to
+                At Tales of Wanderthurst, we believe that travel should be a force for good. We are committed to
                 responsible tourism practices that minimize environmental impact, respect local cultures, and contribute
                 positively to the communities we visit.
               </p>

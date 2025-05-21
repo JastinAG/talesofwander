@@ -14,7 +14,7 @@ export const testimonials: TestimonialType[] = [
     location: "London, UK",
     rating: 5,
     comment:
-      "Our safari experience with Tales of Wanderthrust was absolutely incredible! The guides were knowledgeable, accommodations were luxurious, and we saw all of the Big Five. A dream come true!",
+      "Our safari experience with Tales of Wanderthurst was absolutely incredible! The guides were knowledgeable, accommodations were luxurious, and we saw all of the Big Five. A dream come true!",
     image: "/images/testimonials/person1.jpg",
   },
   {
@@ -23,7 +23,7 @@ export const testimonials: TestimonialType[] = [
     location: "Toronto, Canada",
     rating: 5,
     comment:
-      "Diani Beach was paradise! The team at Wanderthrust arranged everything perfectly - from airport transfers to our beachfront villa. The snorkeling trip they organized was the highlight of our vacation.",
+      "Diani Beach was paradise! The team at Wanderthurst arranged everything perfectly - from airport transfers to our beachfront villa. The snorkeling trip they organized was the highlight of our vacation.",
     image: "/images/testimonials/person1.jpg",
   },
   {
@@ -41,7 +41,7 @@ export const testimonials: TestimonialType[] = [
     location: "Sydney, Australia",
     rating: 5,
     comment:
-      "We combined a safari and beach holiday with Wanderthrust and it was the perfect mix of adventure and relaxation. The transitions between locations were seamless and the accommodations were top-notch.",
+      "We combined a safari and beach holiday with Wanderthurst and it was the perfect mix of adventure and relaxation. The transitions between locations were seamless and the accommodations were top-notch.",
     image: "/images/testimonials/person4.jpg",
   },
   {
@@ -50,7 +50,7 @@ export const testimonials: TestimonialType[] = [
     location: "Mumbai, India",
     rating: 5,
     comment:
-      "Our family trip to Kenya was unforgettable thanks to Tales of Wanderthrust. They catered to our children's needs perfectly and created a customized itinerary that kept everyone engaged and excited.",
+      "Our family trip to Kenya was unforgettable thanks to Tales of Wanderthurst. They catered to our children's needs perfectly and created a customized itinerary that kept everyone engaged and excited.",
     image: "/images/testimonials/person1.jpg",
   },
   {

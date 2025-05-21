@@ -11,21 +11,21 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Tales of Wanderthrust Tours & Travel",
+  title: "Tales of Wanderthurst Tours & Travel",
   description:
     "Creating unforgettable travel experiences across Kenya, Africa, and worldwide. Specializing in beach and bush packages tailored to your needs.",
   keywords: "travel, Kenya, safari, beach, tours, Africa, Maasai Mara, Diani Beach, Mount Kenya",
   openGraph: {
-    title: "Tales of Wanderthrust Tours & Travel",
+    title: "Tales of Wanderthurst Tours & Travel",
     description: "Creating unforgettable travel experiences across Kenya, Africa, and worldwide.",
-    url: "https://wanderthrust.com",
-    siteName: "Tales of Wanderthrust",
+    url: "https://wanderthurst.com",
+    siteName: "Tales of Wanderthurst",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tales of Wanderthrust Tours & Travel",
+        alt: "Tales of Wanderthurst Tours & Travel",
       },
     ],
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tales of Wanderthrust Tours & Travel",
+    title: "Tales of Wanderthurst Tours & Travel",
     description: "Creating unforgettable travel experiences across Kenya, Africa, and worldwide.",
     images: ["/images/og-image.jpg"],
   },

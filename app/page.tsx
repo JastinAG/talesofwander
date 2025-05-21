@@ -206,7 +206,7 @@ export default function Home() {
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="/images/about-us.jpg"
-                alt="About Tales of Wanderthrust"
+                alt="About Tales of Wanderthurst"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -218,7 +218,7 @@ export default function Home() {
                 Your Journey, Our Expertise
               </h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                At Tales of Wanderthrust, we believe that travel should be transformative, enriching, and seamless. With
+                At Tales of Wanderthurst, we believe that travel should be transformative, enriching, and seamless. With
                 our deep knowledge of Kenya and beyond, we craft personalized experiences that connect you with the
                 heart and soul of each destination.
               </p>
@@ -369,7 +369,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-navy-500 dark:text-white">How It Works</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Planning your dream vacation with Tales of Wanderthrust is simple and stress-free.
+              Planning your dream vacation with Tales of Wanderthurst is simple and stress-free.
             </p>
           </div>
 
